@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  width: 350px;
+  height: 600px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.containerimg {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cardimg {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  opacity: 0.75;
+}
+
+.fa-eye {
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.conteinertxt {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cardtitle {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.cardtitle:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.carddescription {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+.cardwrapper {
+  display: flex;
+  padding: 20px 0px 20px 0px;
+}
+
+.cardwrapper2 {
+  display: flex;
+  padding-left: 120px;
+}
+
+.ethprice {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.ethdays {
+  color: hsl(215, 51%, 70%);
+  padding-left: 5px;
+}
+
+.cardauthor {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
+}
+
+.cardauth {
+  padding-left: 15px;
+}
+
+.authorphoto {
+  width: 40px;
+}
